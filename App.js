@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 import Form from './app/src/components/Form'
 import Result from './app/src/components/Result';
 import colors from "./app/src/utils/colors";
-import Calculate from "./app/src/components/footer";
+import Footer from "./app/src/components/Footer";
 
 export default function App() {
   const [gender,setGender] =useState(null);
@@ -40,7 +40,7 @@ export default function App() {
       <Text style={styles.text}>CALCULADORA DE CALORIAS</Text>
       <Form setgender={setGender} setWeight={setWeight} setHeight={setHeight} setAge={setAge} setActivityLevel={setActivityLevel}/>
       <Result setResult={result}/>
-      <Calculate calculate={calculate}/>
+      <Footer calculate={calculate}/>
       <StatusBar style="auto" />
     </View>
   );

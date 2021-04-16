@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, View,Text, TouchableOpacity } from 'react-native';
 import colors from "../utils/colors";
 
-export default function Calculate(props) {
+export default function Footer(props) {
     const {calculate} =props
     return (
         <View style={styles.footer}>
